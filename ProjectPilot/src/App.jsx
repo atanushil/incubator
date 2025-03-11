@@ -10,6 +10,7 @@ function App() {
     <div className='flex'>
     <SideBar/>
     <Dashboard/>
+    {/* project backlog */}
     </ div>
   )
 }
