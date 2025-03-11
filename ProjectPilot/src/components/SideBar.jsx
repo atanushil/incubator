@@ -10,14 +10,14 @@ const SideBar = () => {
   };
 
   return (
-    <div className={`h-screen ${isOpen ? 'w-64' : 'w-16'} bg-gray-900 text-white transition-all duration-300 flex flex-col`}> 
+    <div className={`h-screen ${isOpen ? ' min-w-[300px] max-w-md' : 'w-16'} bg-gray-900 text-white transition-all duration-300 flex flex-col`}> 
       <button 
         className="p-3 focus:outline-none text-white hover:bg-gray-700"
         onClick={toggleSidebar}
       >
-        <FaBars size={24} />
+        <FaBars size={24} /> 
       </button>
-      <nav className="flex flex-col flex-grow mt-4">
+      <nav className="flex flex-col flex-grow mt-4 gap-2">
         <SidebarItem icon={<FaChartBar />} text="Dashboard" isOpen={isOpen} />
         <SidebarItem icon={<FaClipboardList />} text="Product Backlog" isOpen={isOpen} />
         <SidebarItem icon={<FaTasks />} text="Sprint Backlog" isOpen={isOpen} />

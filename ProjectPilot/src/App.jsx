@@ -1,16 +1,20 @@
-import { useState } from 'react'
-// import './App.css'
-import SideBar from './components/SideBar'
-import Dashboard from './components/Dashboard'
+import { ProductBacklog,SideBar,Dashboard } from './utils'
 
 function App() {
-  const [count, setCount] = useState(0)
 
   return (
+<<<<<<< HEAD
     <div className='flex'>
     <SideBar/>
     <Dashboard/>
     {/* project backlog */}
+=======
+    <div className='flex w-[100vw]'>
+
+      <SideBar />
+      {/* <PD/> */}
+      <Dashboard />
+>>>>>>> atanu
     </ div>
   )
 }
