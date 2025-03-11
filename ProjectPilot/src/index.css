@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 @import "tailwindcss";
 
 :root {
@@ -68,3 +69,6 @@ button:focus-visible {
     background-color: #f9f9f9;
   }
 }
+=======
+@import "tailwindcss";
+>>>>>>> main
