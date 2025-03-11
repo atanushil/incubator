@@ -6,11 +6,18 @@ import { ScrumMeetings } from "../components/srucm-meeting";
 import { TestingBugs } from "../components/testing-bugs";
 import { Deployment } from "../components/deployment-version";
 import { TeamManagement } from "../components/team-management";
+import cleanIcon from '../assets/clean.png';
 
-export{
-    Layout,ProductBacklog,Dashboard,
+export {
+    Layout, 
+    ProductBacklog,
+     Dashboard,
     SprintBacklog,
     ScrumMeetings,
     TestingBugs,
-    Deployment,TeamManagement
+    Deployment, 
+    TeamManagement,
+
+
+    cleanIcon,
 }

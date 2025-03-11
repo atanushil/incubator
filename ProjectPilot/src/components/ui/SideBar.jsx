@@ -17,7 +17,7 @@ const SideBar = () => {
       </button>
       <br />
       <div className="flex-col">
-        <SidebarItem to="/dashboard" icon={<FaChartBar />} text="Dashboard" isOpen={isOpen} />
+        <SidebarItem to="/" icon={<FaChartBar />} text="Dashboard" isOpen={isOpen} />
         <SidebarItem to="/product-backlog" icon={<FaClipboardList />} text="Product Backlog" isOpen={isOpen} />
         <SidebarItem to="/sprint-backlog" icon={<FaTasks />} text="Sprint Backlog" isOpen={isOpen} />
         <SidebarItem to="/scrum-meetings" icon={<MdOutlineMeetingRoom />} text="Scrum Meetings" isOpen={isOpen} />

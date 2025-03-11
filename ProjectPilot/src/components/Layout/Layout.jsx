@@ -1,15 +1,21 @@
 import React from "react";
 import { Outlet } from "react-router-dom";
-import SideBar from "../SideBar";
+import SideBar from "../ui/SideBar";
+import SearchBar from "../search-bar/SearchBar";
+import Notification from "../ui/Notification";
+import Profile from "../ui/Profile";
 
 export const Layout = () => {
   return (
-    <div className="">
-      <div className="grid grid-cols-12 grid-rows-8 gap-2 bg-slate-400">
+    <div className="w-screen">
+      <div className="grid grid-cols-12 grid-rows-8  bg-slate-400  ">
         <div className="col-span-3 row-span-8 "><SideBar/></div>
-        <div className="col-span-7 col-start-4">Search</div>
-        <div className="col-span-9 row-span-7 col-start-4 row-start-2 "><Outlet/></div>
-        <div className="col-span-2 col-start-11 row-start-1">profile</div>
+        <div className="col-span-8 col-start-4 flex justify-end items-center px-5 "><SearchBar/></div>
+        <div className="col-span-9 row-span-7 col-start-4 row-start-2 bg-amber-200 text-black"><Outlet/></div>
+        <div className="col-span-1 col-start-12 row-start-1 flex justify-between px-1 items-center ">
+          <Notification />
+          <Profile/>
+          </div>
       </div>
     </div>
   );
