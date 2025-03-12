@@ -1,11 +1,11 @@
 import React from 'react';
 
-const Time = () => {
+const KanbanBoard = () => {
     return (
         <div>
-            from time
+            KanbanBoard
         </div>
     );
 }
 
-export default Time;
+export default KanbanBoard;
