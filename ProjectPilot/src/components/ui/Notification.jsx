@@ -6,7 +6,7 @@ const Notification = ({ count = 5 }) => {
         <div className="relative flex items-center space-x-2 cursor-pointer">
             {/* Notification Button */}
             <button className="relative p-3 bg-white rounded-full shadow-lg hover:bg-gray-100 transition duration-300 cursor-pointer">
-                {count > 0 ? <IoMdNotifications className="text-red-500 text-xl" /> : <IoIosNotificationsOutline className="text-gray-600 text-xl" />}
+                {count > 0 ? <IoMdNotifications className="text-red-500 text-xl" /> : <IoIosNotificationsOutline className="text-gray-600 text-lg" />}
             </button>
 
             {/* Notification Badge */}
